@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
+    <div class="site">
     <header>
+        <style>
+            p {
+                font-size: 25px;
+            }
+            .footer-text{
+                font-size: 15px;
+            }
+            .site {
+                min-height: 90dvh;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                grid-template-columns: minmax(0, 1fr);
+            }
+            #footer{
+
+                position: fixed;
+                bottom: 0;
+            }
+        </style>
         <nav>
             <a href="Home.html" style="font-size: 25px">Home</a>
             <a href="About.html" style="font-size: 25px">About</a>
@@ -12,12 +32,10 @@
         <h1 align="center" style="font-size: 50px">My Web Development Journey</h1>
     </header>
     <body>
-        <!--
-        <a href="https://github.com/c-cardie"><p style="text-align:center"> Visit My GitHub Page!</p></a>
-        -->
         <p style="text-align:center">Check out <a href="https://github.com/c-cardie" target="_blank">my GitHub page!</a></p>
     </body>
+</div>
     <footer>
-        <p>Claire Cardie    Feb 5th 2025</p>
+        <p class="footer-text">Claire Cardie    2025</p>
     </footer>
 </html>
