@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <nav>
-        <a href="Home.html" style="font-size: 25px">Home</a>
-        <a href="About.html" style="font-size: 25px">About</a>
-        <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
-        <a href="Team Projects.html" style="font-size: 25px">Team Projects</a>
+    <style>
 
-    </nav>
-    <h1 align="left">About Me</h1>
-</header>
+        /* Used W3School's styling here */
+        *{
+        box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        p {padding-right:20px;}
+
+    </style>
+    <header>
+        <nav>
+            <a href="Home.html" style="font-size: 25px">Home</a>
+            <a href="About.html" style="font-size: 25px">About</a>
+            <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
+            <a href="Team Projects.html" style="font-size: 25px">Team Projects</a>
+
+        </nav>
+        <h1 align="left">About Me</h1>
+    </header>
 <body>
-    <h3 align="left">Hi! I'm Claire. I am a student at Franciscan University of Steubenville majoring in computer science. Currently, I know C++ and am learning Java, python, and HTML. When I am not programming, I am usually playing tennis for the school's team. In my free time, I like going to the gym, reading, spending quality time with friends, and deepening my prayer life.</h3>
-    <img src="About Me P1.jpg" align="right" alt="Logo" width=400px height=450px>
-
+    <div class="row">
+        <div class ="column">
+            <h3 align="left">Hi! I'm Claire. I am a student at Franciscan University of Steubenville majoring in computer science. Currently, I know C++ and am learning Java, python, and HTML. When I am not programming, I am usually playing tennis for the school's team. In my free time, I like going to the gym, reading, spending quality time with friends, and deepening my prayer life.</h3>
+        </div>
+        <div class="column">
+            <img src="About Me P1.jpg" align="right" alt="Logo" width=400px height=450px>
+        </div>
+    </div>
+    
 </body>
 </html>
