@@ -3,6 +3,28 @@
     <header>
         <style>
 
+            li{
+                display: inline-block;
+            }
+
+            a{
+                display: block;
+                padding: 1rem;
+
+                &:after {
+                    margin-left: 1rem;
+                }
+
+            }
+
+            projectList {
+                margin: 10px;
+                border: 1px black;
+                padding: 10px;
+                height: 100px;
+                width: 100%;
+            }
+
             /*link stuff credit: W3Schools.com*/
             /* unvisited link */
             a:link {
@@ -27,25 +49,34 @@
             body {
                 background: ivory url("coffee computer.png") no-repeat fixed right bottom -40px;
                 background-size: 300px;
+                font-family: sans-serif;
             }
             p {
                 font-size: 15px;
             }
             #navbar{
                 background-color:gainsboro;
+                margin: 10px;
+                border: 1px black;
+                padding: 10px;
+                height: 80px;
+                width: 100%;
             }
         </style>
         <nav id="navbar">
-            <a href="Home.html" style="font-size: 25px">Home</a>
-            <a href="About.html" style="font-size: 25px">About</a>
-            <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
-            <a href="Team Projects.html" style="font-size: 25px">Team Projects</a>
+            <li><a href="Home.html" style="font-size: 25px">Home</a></li>
+            <li><a href="About.html" style="font-size: 25px">About</a></li>
+            <li><a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a></li>
+            <li><a href="Team Projects.html" style="font-size: 25px">Team Projects</a></li>
+
 
         </nav>
         <h1>Team Projects</h1> 
     </header>
     <body>
-        <h2>A mock car part shop site:</h2>
-        <p style="text-align:left"><a href="/Mini-Project/index.html" target="_blank">CarParts.html</a></p>
+        <ProjectList>
+            <h2>A mock car part shop site:</h2>
+            <p style="text-align:left"><a href="/Mini-Project/index.html" target="_blank">CarParts.html</a></p>
+        </ProjectList>
     </body>
 </html>
