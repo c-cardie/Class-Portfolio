@@ -2,11 +2,40 @@
 <html>
     <header>
         <style>
+
+            /*link stuff*/
+            /* unvisited link */
+            a:link {
+            color: green;
+            }
+
+            /* visited link */
+            a:visited {
+            color: green;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: red;
+            }
+
+            /* selected link */
+            a:active {
+            color: yellow;
+            } 
+
+            body {
+                background: ivory url("coffee computer.png") no-repeat fixed left bottom -40px;
+                background-size: 300px;
+            }
             p {
                 font-size: 15px;
             }
+            #navbar{
+                background-color:gainsboro;
+            }
         </style>
-        <nav>
+        <nav id="navbar">
             <a href="Home.html" style="font-size: 25px">Home</a>
             <a href="About.html" style="font-size: 25px">About</a>
             <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
