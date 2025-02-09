@@ -5,9 +5,31 @@
     <div class="site">
     <header>
         <style>
-            /*link stuff credit: W3Schools.com*/
-            /* unvisited link */
-            a:link {
+
+            headerStuff{
+                margin: 1px;
+                border: 1px black;
+                padding: 1px;
+                height: 50px;
+                width: 100%;     
+            }
+
+            li{
+                display: inline-block;
+            }
+
+            a{
+                display: block;
+                padding: 1rem;
+
+                &:after {
+                    margin-left: 1rem;
+                }
+
+            }
+
+             /* unvisited link */
+             a:link {
             color: green;
             }
 
@@ -25,9 +47,13 @@
             a:active {
             color: yellow;
             } 
+
+            
+            
             /*setting background style*/
             body {
-                background: lightblue url("coffee computer.png") no-repeat fixed center bottom -40px;
+                background: lightblue url("coffee computer.png") no-repeat fixed right bottom -60px;
+                font-family: sans-serif;
             }
 
             /*Element*/
@@ -57,21 +83,30 @@
             }
             */
 
+            
             #navbar{
-                background-color:gainsboro;               
+                background-color:gainsboro;
+                margin: 10px;
+                border: 1px black;
+                padding: 10px;
+                height: 50px;
+                width: 100%;           
             }
+            
          
         </style>
 
         <nav id="navbar">
-            <a href="Home.html" style="font-size: 25px">Home</a>
-            <a href="About.html" style="font-size: 25px">About</a>
-            <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
-            <a href="Team Projects.html" style="font-size: 25px">Team Projects</a>
+            <li><a href="Home.html" style="font-size: 25px">Home</a></li>
+            <li><a href="About.html" style="font-size: 25px">About</a></li>
+            <li><a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a></li>
+            <li><a href="Team Projects.html" style="font-size: 25px">Team Projects</a></li>
 
         </nav>
-        <h1 align="center" style="font-size: 75px">Claire Cardie</h1> 
-        <h1 align="center" style="font-size: 50px">My Web Development Journey</h1>
+        <headerStuff>
+            <h1 align="center" style="font-size: 75px">Claire Cardie</h1> 
+            <h1 align="center" style="font-size: 50px">My Web Development Journey</h1>
+        </headerStuff>
     </header>
     <body>
         <p style="text-align:center">Check out <a href="https://github.com/c-cardie" target="_blank">my GitHub page!</a></p>
