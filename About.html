@@ -2,6 +2,32 @@
 <html>
     <style>
 
+        /*link stuff*/
+            /* unvisited link */
+            a:link {
+            color: green;
+            }
+
+            /* visited link */
+            a:visited {
+            color: green;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: red;
+            }
+
+            /* selected link */
+            a:active {
+            color: yellow;
+            } 
+
+        body {
+                background: lightgoldenrodyellow url("coffee computer.png") no-repeat fixed left bottom -40px;
+                background-size: 300px;
+        }
+
         /* Used W3School's styling here */
         *{
         box-sizing: border-box;
@@ -23,9 +49,13 @@
         }
         p {padding-right:20px;}
 
+        #navbar{
+            background-color:gainsboro;
+        }
+
     </style>
     <header>
-        <nav>
+        <nav id="navbar">
             <a href="Home.html" style="font-size: 25px">Home</a>
             <a href="About.html" style="font-size: 25px">About</a>
             <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
