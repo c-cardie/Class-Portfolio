@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html>
+    <!--class site-->
+    <!--done so footer is at bottom of page-->
     <div class="site">
     <header>
         <style>
+            /*link stuff*/
+            /* unvisited link */
+            a:link {
+            color: green;
+            }
+
+            /* visited link */
+            a:visited {
+            color: green;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: red;
+            }
+
+            /* selected link */
+            a:active {
+            color: yellow;
+            } 
+            /*setting background style*/
+            body {
+                background: lightblue url("coffee computer.png") no-repeat fixed center bottom -40px;
+            }
+
+            /*Element*/
+            /*All p text has size of 25px*/
             p {
                 font-size: 25px;
             }
+
+            /*Class footer text*/
             .footer-text{
                 font-size: 15px;
             }
+
+            /*class site's attributes defined here*/
             .site {
                 min-height: 90dvh;
                 display: grid;
                 grid-template-rows: auto 1fr auto;
                 grid-template-columns: minmax(0, 1fr);
             }
+
+            /*
             #footer{
 
                 position: fixed;
                 bottom: 0;
             }
+            */
+
+            #navbar{
+                background-color:gainsboro;               
+            }
+         
         </style>
-        <nav>
+
+        <nav id="navbar">
             <a href="Home.html" style="font-size: 25px">Home</a>
             <a href="About.html" style="font-size: 25px">About</a>
             <a href="Individual Projects.html" style="font-size: 25px">Individual Projects</a>
@@ -36,6 +78,7 @@
     </body>
 </div>
     <footer>
+        <!--footer text class used down here-->
         <p class="footer-text">Claire Cardie    2025</p>
     </footer>
 </html>
